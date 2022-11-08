@@ -17,7 +17,7 @@ const Home = () => {
   const { tokenExpirationTime } = useAuth();
   const [allChallenges, setAllChallenges] = useState([]);
   //prettier-ignore
-  const { isLoading, error, errorHandler, sendHttpRequest } = useHttpRequestClient();
+  const { isLoading, sendHttpRequest } = useHttpRequestClient();
   //prettier-ignore
   const { token, login,  support: globalSupport, nickname: globalNickname} = useContext(AuthContext);
 

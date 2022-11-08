@@ -6,7 +6,7 @@ import { AuthContext } from "../../context/authContext";
 
 const Navbar = () => {
   const isAuthenticated = useContext(AuthContext);
-  const { logout, token, isLoggedIn } = isAuthenticated;
+  const { logout, isLoggedIn } = isAuthenticated;
 
   return (
     <header className={classes.headerStyles}>
