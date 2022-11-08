@@ -1,0 +1,89 @@
+.usernameDiv {
+  gap: 1rem;
+  display: flex;
+  margin: 0rem auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .pageTitle {
+    font-size: 2.5rem;
+    color: var(--color-grey-2);
+    span {
+      color: #7ec8e3;
+    }
+  }
+
+  .pageDesc {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-grey-2);
+  }
+
+  .userNameForm {
+    width: 400px;
+    &__invalid label,
+    &__invalid p {
+      color: red;
+    }
+
+    &__invalid input,
+    &__invalid textarea {
+      border-color: red;
+      background: #ffd1d1;
+    }
+
+    & label,
+    & input,
+    & textarea {
+      display: block;
+      border-radius: 5px;
+      color: var(--color-grey-2);
+    }
+
+    & label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    & input,
+    & textarea {
+      width: 100%;
+      font-size: 1.4rem;
+      padding: 1rem 2rem;
+      border: 1px solid #ccc;
+      background: var(--color-grey-3);
+    }
+
+    & input:focus,
+    & textarea:focus {
+      outline: none;
+      background: #ebebeb;
+      border-color: #fc9d0d;
+    }
+  }
+  .nextButton {
+    outline: none;
+    margin-top: 1rem;
+    color: #fc9d0d;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #fc9d0d;
+  }
+
+  .disabled_link {
+    outline: none;
+    color: #979797;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    background: #ccc;
+    cursor: not-allowed;
+    border-color: #ccc;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

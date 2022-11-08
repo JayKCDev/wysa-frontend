@@ -1,0 +1,93 @@
+.supportDiv {
+  display: flex;
+  align-items: center;
+  margin: 0rem auto;
+  flex-direction: column;
+  justify-content: center;
+
+  .loadingDiv {
+    width: 500px;
+  }
+
+  .pageTitle {
+    font-size: 2.5rem;
+    color: var(--color-grey-2);
+  }
+
+  .pageDesc {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-grey-2);
+  }
+
+  .supportStylesGrid {
+    gap: 2rem;
+    display: grid;
+    margin-top: 5rem;
+    // grid-template-rows: 2;
+    // grid-template-columns: 1;
+    .supportStyle {
+      cursor: pointer;
+      border-radius: 1rem;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      //   background: #81B622;
+      justify-content: center;
+      background: var(--color-grey-3);
+
+      .supportName {
+        font-size: 1.6rem;
+        color: var(--color-grey-2);
+      }
+
+      .supportDesc {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color: var(--color-grey-2);
+      }
+    }
+
+    .selectedSupportStyle {
+      cursor: pointer;
+      border-radius: 1rem;
+      align-items: center;
+      background: #81b622;
+      padding: 1.5rem 3rem;
+      justify-content: center;
+
+      .supportName {
+        font-size: 1.6rem;
+        color: var(--color-grey-2);
+      }
+
+      .supportDesc {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color: var(--color-grey-2);
+      }
+    }
+  }
+
+  .actionButtons {
+    gap: 10rem;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    .submitButton,
+    .prevButton {
+      outline: none;
+      cursor: pointer;
+      margin-top: 1rem;
+      color: #fc9d0d;
+      font-size: 1.4rem;
+      padding: 1rem 2rem;
+      border-radius: 3px;
+      text-decoration: none;
+      background: transparent;
+      text-transform: uppercase;
+      border: 1px solid #fc9d0d;
+    }
+  }
+}
