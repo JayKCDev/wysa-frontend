@@ -6,6 +6,7 @@ import ErrorModal from "../../components/ErrorModal";
 import { AuthContext } from "../../context/authContext";
 import LoadingSpinner from "../../components/LoadingSpinner";
 import { useHttpRequestClient } from "../../hooks/useHttpRequestClient";
+import { useEffect } from "react";
 
 const initialValues = {
   email: "",
@@ -27,7 +28,9 @@ const Auth = () => {
       ...values,
       [name]: value,
     });
-    if (values.email && values.password) {
+    if (values.email === "" || values.password === "") {
+      setIsValid(false);
+    } else {
       setIsValid(true);
     }
   };
@@ -135,7 +138,10 @@ const Auth = () => {
         </form>
         <button
           type="submit"
-          className={classes.submitButton}
+          disabled={!isValid}
+          className={`${
+            isValid ? `${classes.submitButton}` : `${classes.disabledLink}`
+          }`}
           onClick={submitAuthHandler}
         >
           Submit

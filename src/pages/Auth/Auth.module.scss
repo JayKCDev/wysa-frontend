@@ -114,4 +114,18 @@
     text-transform: uppercase;
     border: 1px solid #fc9d0d;
   }
+
+  .disabledLink {
+    outline: none;
+    margin-top: 1rem;
+    color: #979797;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    background: #ccc;
+    cursor: not-allowed;
+    border-color: #ccc;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }

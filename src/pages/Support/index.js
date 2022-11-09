@@ -50,8 +50,11 @@ const Support = (props) => {
           </Link>
           <button
             type="submit"
+            disabled={!support}
             onClick={submitFormHandler}
-            className={classes.submitButton}
+            className={`${
+              support ? `${classes.submitButton}` : `${classes.disabledLink}`
+            }`}
           >
             Submit
           </button>
